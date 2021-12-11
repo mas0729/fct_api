@@ -1,0 +1,5 @@
+// condaの環境をfctapi_envに切り替える
+conda activate fastapi_env
+
+// debug起動
+uvicorn main:app --reload
