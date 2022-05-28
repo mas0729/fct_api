@@ -26,3 +26,8 @@ def read_item(item_id: int, q: str = None):
 def create_user(user: User):
     print(user)
     return {"status": "OK", "name": user.name, "age": user.age}
+
+
+if __name__ == "__main__":
+        uvicorn.run(app, host="0.0.0.0", port=8000)
+
